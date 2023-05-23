@@ -1,0 +1,11 @@
+{
+    "description": "Bar chart with text labels. Set domain to make the frame cover the labels.",
+    "data": {"url": "data/chronic.csv"},
+    "encoding": {
+      "y": {"field": "cause_name", "type": "nominal", "title": "Disease"},
+      "x": {"field": "count", "type": "quantitative", "title": "Count"}
+    },
+    "mark": "bar",
+    "width": 800
+  }
+  

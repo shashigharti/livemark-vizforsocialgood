@@ -1,0 +1,12 @@
+{
+    "description": "Bar chart with text labels. Set domain to make the frame cover the labels.",
+    "data": {"url": "data/top-diseases-by-incomelevel.csv"},
+    "encoding": {
+      "y": {"field": "IncomeGroupCountry", "type": "nominal", "title": "Income Group"},
+      "x": {"field": "count", "type": "quantitative", "title": "Count"},
+      "color": {"field": "cause_name", "type": "nominal", "title": "Cause"}
+    },
+    "mark": "bar",
+    "width": 400
+  }
+  

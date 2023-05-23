@@ -1,0 +1,242 @@
+{
+  "name": "disability-prevalence",
+  "title": "Disability Prevalence",
+  "description": "It is important to note that these tables should be treated as independent data sets. Any calculations performed on similar groupings across tables may not yield consistent results. These are real-world examples.",
+  "resources": [
+    {
+      "title": "Age",
+      "name": "age",
+      "description": "Age includes data for countries and territories for which IHME has data",
+      "type": "table",
+      "path": "DisabilityPrevalence.xlsx",
+      "scheme": "file",
+      "format": "xlsx",
+      "mediatype": "application/vnd.ms-excel",
+      "encoding": "utf-8",
+      "dialect": {
+        "excel": {
+          "sheet": "age"
+        }
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "location_id",
+            "type": "integer",
+            "description": "Geographic scope"
+          },
+          {
+            "name": "age_group_id",
+            "type": "integer",
+            "description": "Age range"
+          },
+          {
+            "name": "age_group",
+            "type": "string",
+            "description": "Age range"
+          },
+          {
+            "name": "sex_id",
+            "type": "integer",
+            "description": "Sex"
+          },
+          {
+            "name": "year_id",
+            "type": "integer",
+            "description": "Year of data collected"
+          },
+          {
+            "name": "severity",
+            "type": "string",
+            "description": "Severity"
+          },
+          {
+            "name": "metric_id",
+            "type": "integer",
+            "description": "Number or percentage of prevalence of disability"
+          },
+          {
+            "name": "level",
+            "type": "integer",
+            "description": "Granularity of cause"
+          },
+          {
+            "name": "cause_name",
+            "type": "string",
+            "description": "Cause of disability"
+          },
+          {
+            "name": "prev",
+            "type": "decimal",
+            "description": "Prevalence of disability"
+          },
+          {
+            "name": "lower",
+            "type": "integer",
+            "description": "Prevalence of disability, lower value of confidence interval"
+          },
+          {
+            "name": "upper",
+            "type": "integer",
+            "description": "Prevalence of disability, upper value of confidence interval"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Income",
+      "name": "income",
+      "description": "Income is from World Bank countries",
+      "type": "table",
+      "path": "DisabilityPrevalence.xlsx",
+      "scheme": "file",
+      "format": "xlsx",
+      "mediatype": "application/vnd.ms-excel",
+      "encoding": "utf-8",
+      "dialect": {
+        "excel": {
+          "sheet": "income"
+        }
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "IncomeGroupCountry",
+            "type": "string",
+            "description": "World Bank income group classification of countries (July 2020)"
+          },
+          {
+            "name": "age_group_id",
+            "type": "integer",
+            "description": "Age range"
+          },
+          {
+            "name": "sex_id",
+            "type": "integer",
+            "description": "Sex"
+          },
+          {
+            "name": "year_id",
+            "type": "integer",
+            "description": "Year of data collected"
+          },
+          {
+            "name": "cause_name",
+            "type": "string",
+            "description": "Cause of disability"
+          },
+          {
+            "name": "level",
+            "type": "integer",
+            "desription": "Granularity of cause"
+          },
+          {
+            "name": "severity",
+            "type": "string",
+            "description": "Severity"
+          },
+          {
+            "name": "metric_id",
+            "type": "integer",
+            "description": "Number or percentage"
+          },
+          {
+            "name": "mean",
+            "type": "number",
+            "description": "Prevalence of disability, average"
+          },
+          {
+            "name": "lower",
+            "type": "number",
+            "description": "Prevalence of disability, lower value of confidence interval"
+          },
+          {
+            "name": "upper",
+            "type": "number",
+            "description":"Prevalence of disability, upper value of confidence interval"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Regions",
+      "name": "regions",
+      "description": "Regions is from World Health Organization member states",
+      "type": "table",
+      "path": "DisabilityPrevalence.xlsx",
+      "scheme": "file",
+      "format": "xlsx",
+      "mediatype": "application/vnd.ms-excel",
+      "encoding": "utf-8",
+      "dialect": {
+        "excel": {
+          "sheet": "regions"
+        }
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "Region",
+            "type": "string",
+            "description": "WHO regional scope"
+          },
+          {
+            "name": "location_id",
+            "type": "integer",
+            "description": "Geographic scope"
+          },
+          {
+            "name": "age_group_id",
+            "type": "integer",
+            "description": "Age range"
+          },
+          {
+            "name": "sex_id",
+            "type": "integer",
+            "description": "Sex"
+          },
+          {
+            "name": "year_id",
+            "type": "integer",
+            "description": "Year of data collected"
+          },
+          {
+            "name": "cause_name",
+            "type": "string",
+            "description": "Cause of disability"
+          },
+          {
+            "name": "level",
+            "type": "integer",
+            "description": "Granularity of cause"
+          },
+          {
+            "name": "severity",
+            "type": "string",
+            "desription": "Severity"
+          },
+          {
+            "name": "metric_id",
+            "type": "integer",
+            "description": "Number or percentage"
+          },
+          {
+            "name": "mean",
+            "type": "integer",
+            "description": "Prevalence of disability, average"
+          },
+          {
+            "name": "lower",
+            "type": "integer",
+            "description": "Prevalence of disability, lower value of confidence interval"
+          },
+          {
+            "name": "upper",
+            "type": "integer",
+            "description": "Prevalence of disability, upper value of confidence interval"
+          }
+        ]
+      }
+    }
+  ]
+}
