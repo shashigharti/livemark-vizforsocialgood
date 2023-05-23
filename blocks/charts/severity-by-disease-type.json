@@ -1,0 +1,23 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "data/severity-by-disease-type.csv"},
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "field": "type",
+        "type": "ordinal",
+        "title": "Disease Type"
+      },
+      "y": {
+        "aggregate": "count",
+        "type": "quantitative"
+      },
+      "color": {
+        "field": "severity",
+        "type": "nominal",
+        "title": "Disease severity by type"
+      }
+    },
+    "width": 800
+}
+  

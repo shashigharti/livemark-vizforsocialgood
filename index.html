@@ -1585,7 +1585,7 @@ body:not(.with-readability) #livemark-right::-webkit-scrollbar {
 <div id="livemark-main">
 <div id="livemark-notes">
       <a href="https://github.com/shashigharti/vizualization-who/edit/main/index.md" target="_blank">Edit page </a> in <a href="https://livemark.frictionlessdata.io" target="_blank"> Livemark </a><br>
-    (2023-05-23 21:59)
+    (2023-05-23 23:08)
 </div>
 
 <h1>Disability Prevalance - Project for Viz for Social Good</h1>
@@ -1597,7 +1597,7 @@ body:not(.with-readability) #livemark-right::-webkit-scrollbar {
 </div><p>Disability is a condition where a person experiences difficulty in performing regular human activities and interacting with their surrounding environment. It's easy to overlook how much we take for granted things that can be difficult for people with disabilities. By complying with web accessibility standards, we can ensure that everyone has equal access to information and resources. </p>
 <div><div class="status row">
   <div class="mx-auto font-weight-bold lead">
-    Are you interested to know how chronic diseases are spread across <br> income levels, age groups, and regions? 
+    Are you interested to know how diseases are spread across <br> income levels, age groups, and regions? 
   </div>
 </div>
 <br>
@@ -1655,7 +1655,7 @@ document.addEventListener("DOMContentLoaded", function(){
 </script>
 
 </div><h2>Disease by type</h2>
-<p>The chart by type shows that <strong>Cancer, Infectious disease and Mental disorder</strong> seems to be the most prevalent condition.</p>
+<p>This chart shows that <strong>Cancer, Infectious disease and Mental disorder</strong> seems to be the most prevalent condition.</p>
 <div><div class="livemark-chart" style="overflow-x: auto">
   <div id="livemark-chart-3">
   </div>
@@ -1666,6 +1666,47 @@ document.addEventListener("DOMContentLoaded", function(){
 })
 </script>
 
+</div><h2>Disease distribution by age</h2>
+<p>Surprisingly, it appears that all disease type occurrance are evenly distributed among different age groups in this data. The age groups include <strong>0 to 14, 15 plus, 15 to 59, 60 plus, All age, and age standardized</strong></p>
+<div><div class="livemark-chart" style="overflow-x: auto">
+  <div id="livemark-chart-4">
+  </div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+  vegaEmbed('#livemark-chart-4', JSON.parse('{"$schema": "https://vega.github.io/schema/vega-lite/v5.json", "data": {"url": "data/disease-by-age.csv"}, "mark": "bar", "encoding": {"x": {"field": "age_group", "type": "ordinal", "title": "Age Group"}, "y": {"aggregate": "count", "type": "quantitative"}, "color": {"field": "type", "type": "nominal", "title": "Disease distribution by age"}}, "width": 800}'))
+})
+</script>
+
+</div><h2>Disease distribution by region</h2>
+<p>Here also the occurrence of all disease types is evenly distributed among different regions. The regions include <strong>AFR, AMR, EMR, EUR, SEAR, and WPR</strong>.</p>
+<div><div class="livemark-chart" style="overflow-x: auto">
+  <div id="livemark-chart-5">
+  </div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+  vegaEmbed('#livemark-chart-5', JSON.parse('{"$schema": "https://vega.github.io/schema/vega-lite/v5.json", "data": {"url": "data/disease-by-region.csv"}, "mark": "bar", "encoding": {"x": {"field": "Region", "type": "ordinal", "title": "Age Group"}, "y": {"aggregate": "count", "type": "quantitative"}, "color": {"field": "type", "type": "nominal", "title": "Disease distribution by region"}}, "width": 800}'))
+})
+</script>
+
+</div><h2>Disease severity by type</h2>
+<p>Among all disease types <strong>Cancer, Cardiovascular, Diabetes, Infectious disease, Kidney, Liver, Lung, Mental disorder and others,  only Liver, Lung and Cardiovascular</strong> do not have severe cases. </p>
+<div><div class="livemark-chart" style="overflow-x: auto">
+  <div id="livemark-chart-6">
+  </div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+  vegaEmbed('#livemark-chart-6', JSON.parse('{"$schema": "https://vega.github.io/schema/vega-lite/v5.json", "data": {"url": "data/severity-by-disease-type.csv"}, "mark": "bar", "encoding": {"x": {"field": "type", "type": "ordinal", "title": "Disease Type"}, "y": {"aggregate": "count", "type": "quantitative"}, "color": {"field": "severity", "type": "nominal", "title": "Disease severity by type"}}, "width": 800}'))
+})
+</script>
+
+</div><div><div class="status row">
+  Developed using 
+  <a href="https://framework.frictionlessdata.io/">  Frictionless </a> /
+  <a href="https://livemark.frictionlessdata.io/"> livemark </a>
+</div>
 </div>
 </div>
 <div id="livemark-right">

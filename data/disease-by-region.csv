@@ -1,0 +1,55 @@
+index,Region,type,count
+0,AFR,Cancer,294
+1,AFR,Cardiovascular,24
+2,AFR,Diabetes,24
+3,AFR,Infectious disease,276
+4,AFR,Kidney,48
+5,AFR,Liver,30
+6,AFR,Lung,6
+7,AFR,Mental disorder,204
+8,AFR,Other,912
+9,AMR,Cancer,294
+10,AMR,Cardiovascular,24
+11,AMR,Diabetes,24
+12,AMR,Infectious disease,276
+13,AMR,Kidney,48
+14,AMR,Liver,30
+15,AMR,Lung,6
+16,AMR,Mental disorder,204
+17,AMR,Other,912
+18,EMR,Cancer,294
+19,EMR,Cardiovascular,24
+20,EMR,Diabetes,24
+21,EMR,Infectious disease,276
+22,EMR,Kidney,48
+23,EMR,Liver,30
+24,EMR,Lung,6
+25,EMR,Mental disorder,204
+26,EMR,Other,912
+27,EUR,Cancer,294
+28,EUR,Cardiovascular,24
+29,EUR,Diabetes,24
+30,EUR,Infectious disease,276
+31,EUR,Kidney,48
+32,EUR,Liver,30
+33,EUR,Lung,6
+34,EUR,Mental disorder,204
+35,EUR,Other,912
+36,SEAR,Cancer,294
+37,SEAR,Cardiovascular,24
+38,SEAR,Diabetes,24
+39,SEAR,Infectious disease,276
+40,SEAR,Kidney,48
+41,SEAR,Liver,30
+42,SEAR,Lung,6
+43,SEAR,Mental disorder,204
+44,SEAR,Other,912
+45,WPR,Cancer,294
+46,WPR,Cardiovascular,24
+47,WPR,Diabetes,24
+48,WPR,Infectious disease,276
+49,WPR,Kidney,48
+50,WPR,Liver,30
+51,WPR,Lung,6
+52,WPR,Mental disorder,204
+53,WPR,Other,912

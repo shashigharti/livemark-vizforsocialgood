@@ -1,0 +1,16 @@
+index,type,severity,count
+0,Cancer,moderate and severe,972
+1,Cancer,severe,792
+2,Cardiovascular,moderate and severe,144
+3,Diabetes,moderate and severe,72
+4,Diabetes,severe,72
+5,Infectious disease,moderate and severe,1224
+6,Infectious disease,severe,432
+7,Kidney,moderate and severe,144
+8,Kidney,severe,144
+9,Liver,moderate and severe,180
+10,Lung,moderate and severe,36
+11,Mental disorder,moderate and severe,792
+12,Mental disorder,severe,432
+13,Other,moderate and severe,3816
+14,Other,severe,1656

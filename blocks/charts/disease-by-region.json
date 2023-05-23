@@ -1,0 +1,23 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "data/disease-by-region.csv"},
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "field": "Region",
+        "type": "ordinal",
+        "title": "Age Group"
+      },
+      "y": {
+        "aggregate": "count",
+        "type": "quantitative"
+      },
+      "color": {
+        "field": "type",
+        "type": "nominal",
+        "title": "Disease distribution by region"
+      }
+    },
+    "width": 800
+}
+  

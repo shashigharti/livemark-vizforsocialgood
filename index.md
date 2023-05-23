@@ -13,7 +13,7 @@ Disability is a condition where a person experiences difficulty in performing re
 ```html markup
 <div class="status row">
   <div class="mx-auto font-weight-bold lead">
-    Are you interested to know how chronic diseases are spread across <br /> income levels, age groups, and regions? 
+    Are you interested to know how diseases are spread across <br /> income levels, age groups, and regions? 
   </div>
 </div>
 <br />
@@ -73,10 +73,49 @@ Highly occuring chronic diseases are **Schizophrenia, Alcohol use disorders, Ato
 
 ## Disease by type
 
-The chart by type shows that **Cancer, Infectious disease and Mental disorder** seems to be the most prevalent condition.
+This chart shows that **Cancer, Infectious disease and Mental disorder** seems to be the most prevalent condition.
 
 ```json chart
 {% with code='OWID_WRL', color='blue' %}
 {% include 'blocks/charts/disease-by-type.json' %}
 {% endwith %}
+```
+
+## Disease distribution by age
+
+Surprisingly, it appears that all disease type occurrance are evenly distributed among different age groups in this data. The age groups include **0 to 14, 15 plus, 15 to 59, 60 plus, All age, and age standardized**
+
+```json chart
+{% with code='OWID_WRL' %}
+{% include 'blocks/charts/disease-by-age.json' %}
+{% endwith %}
+```
+
+## Disease distribution by region
+
+Here also the occurrence of all disease types is evenly distributed among different regions. The regions include **AFR, AMR, EMR, EUR, SEAR, and WPR**.
+
+```json chart
+{% with code='OWID_WRL' %}
+{% include 'blocks/charts/disease-by-region.json' %}
+{% endwith %}
+```
+
+## Disease severity by type
+
+Among all disease types **Cancer, Cardiovascular, Diabetes, Infectious disease, Kidney, Liver, Lung, Mental disorder and others,  only Liver, Lung and Cardiovascular** do not have severe cases. 
+
+```json chart
+{% with code='OWID_WRL' %}
+{% include 'blocks/charts/severity-by-disease-type.json' %}
+{% endwith %}
+```
+
+
+```html markup
+<div class="status row">
+  Developed using 
+  <a href="https://framework.frictionlessdata.io/">&nbsp; Frictionless </a> /
+  <a href="https://livemark.frictionlessdata.io/"> livemark </a>
+</div>
 ```

@@ -1,0 +1,55 @@
+index,age_group,type,count
+0,0 to 14,Cancer,294
+1,0 to 14,Cardiovascular,24
+2,0 to 14,Diabetes,24
+3,0 to 14,Infectious disease,276
+4,0 to 14,Kidney,48
+5,0 to 14,Liver,30
+6,0 to 14,Lung,6
+7,0 to 14,Mental disorder,204
+8,0 to 14,Other,912
+9,15 plus,Cancer,294
+10,15 plus,Cardiovascular,24
+11,15 plus,Diabetes,24
+12,15 plus,Infectious disease,276
+13,15 plus,Kidney,48
+14,15 plus,Liver,30
+15,15 plus,Lung,6
+16,15 plus,Mental disorder,204
+17,15 plus,Other,912
+18,15 to 59,Cancer,294
+19,15 to 59,Cardiovascular,24
+20,15 to 59,Diabetes,24
+21,15 to 59,Infectious disease,276
+22,15 to 59,Kidney,48
+23,15 to 59,Liver,30
+24,15 to 59,Lung,6
+25,15 to 59,Mental disorder,204
+26,15 to 59,Other,912
+27,60 plus,Cancer,294
+28,60 plus,Cardiovascular,24
+29,60 plus,Diabetes,24
+30,60 plus,Infectious disease,276
+31,60 plus,Kidney,48
+32,60 plus,Liver,30
+33,60 plus,Lung,6
+34,60 plus,Mental disorder,204
+35,60 plus,Other,912
+36,All age,Cancer,294
+37,All age,Cardiovascular,24
+38,All age,Diabetes,24
+39,All age,Infectious disease,276
+40,All age,Kidney,48
+41,All age,Liver,30
+42,All age,Lung,6
+43,All age,Mental disorder,204
+44,All age,Other,912
+45,age standardized,Cancer,147
+46,age standardized,Cardiovascular,12
+47,age standardized,Diabetes,12
+48,age standardized,Infectious disease,138
+49,age standardized,Kidney,24
+50,age standardized,Liver,15
+51,age standardized,Lung,3
+52,age standardized,Mental disorder,102
+53,age standardized,Other,456
